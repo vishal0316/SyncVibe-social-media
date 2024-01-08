@@ -17,9 +17,9 @@
   --search-padding: o.6rem 1rem;
   --card-padding: 1rem;
 
-  /* --card-padding: irem;
+  --card-padding: 1rem;
   --sticky-top-left: 5.4rem;
-  --sticky-top-right: -18rem; */
+  --sticky-top-right: -18rem;
 }
 
 *,
@@ -124,4 +124,27 @@ nav .create {
   gap: 2rem;
 }
 
+/* main */
 
+main {
+  position: relative;
+  top: 5.4rem;
+}
+
+main .container {
+  display: grid;
+  grid-template-columns: 18vh auto 20vw;
+  column-gap: 2rem;
+  position: relative;
+}
+
+/* left */
+
+main .container .left {
+  height: max-content;
+  position: sticky;
+  top: var(--sticky-top-left);
+}
+
+main .container .left .profile {
+}
