@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 :root {
-  --color-white: hsl(252, 30%, 100%);
+  /* --color-white: hsl(252, 30%, 100%);
   --color-light: hsl(252, 30%, 95%);
   --color-gray: hsl(252, 15%, 65%);
   --color-primary: hsl(252, 75%, 60%);
@@ -9,7 +9,17 @@
   --color-success: hsl(120, 95%, 65%);
   --color-danger: hsl(0, 95%, 65%);
   --color-dark: hsl(252, 30%, 17%);
-  --color-black: hsl(252, 30%, 10%);
+  --color-black: hsl(252, 30%, 10%); */
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-light: hsl(0, 0%, 90%);
+  --color-gray: hsl(0, 0%, 50%);
+  --color-primary: hsl(231, 65%, 56%);
+  --color-secondary: hsl(30, 100%, 90%);
+  --color-success: hsl(120, 70%, 60%);
+  --color-danger: hsl(0, 70%, 60%);
+  --color-dark: hsl(0, 0%, 17%);
+  --color-black: hsl(0, 0%, 10%);
 
   --border-radius: 2rem;
   --card-border-radius: 1rem;
@@ -179,3 +189,85 @@ main .container .left .profile {
   margin-left: 2rem;
   position: relative;
 }
+
+.left .sidebar i {
+  background: var(--color-light);
+}
+
+.left .sidebar i .notification-count {
+  background: var(--color-danger);
+  color: white;
+  font-size: 0.7rem;
+  width: fit-content;
+  border-radius: 0.8rem;
+  padding: 0.1rem 0.4rem;
+  position: absolute;
+  right: 3rem;
+  top: -0.2rem;
+}
+
+.left .sidebar h3 {
+  margin-left: 1.5rem;
+  font-size: 1rem;
+}
+
+.left .sidebar .active {
+  background: var(--color-white);
+}
+
+.left .sidebar .active i,
+.left .sidebar .active h3 {
+  color: var(--color-primary);
+}
+
+.left .sidebar .active::before {
+  content: "";
+  display: block;
+  width: 0.5rem;
+  height: 100%;
+  position: absolute;
+  background-color: var(--color-primary);
+}
+
+.left .sidebar .menu-item:first-child.active {
+  border-top-left-radius: var(--card-border-radius);
+  overflow: hidden;
+}
+.left .sidebar .menu-item:last-child.active {
+  border-bottom-left-radius: var(--card-border-radius);
+  overflow: hidden;
+}
+
+.left .btn {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* NOTIFICATION POPUP */
+
+.left .notifications-popup {
+  position: absolute;
+  top: 0;
+  left: 110%;
+  width: 30rem;
+  background: var(--color-white);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  box-shadow: 0 0 2rem hsl(var(--color-primary), 75%, 60%, 25%);
+  z-index: 8;
+}
+
+.left .notifications-popup::before {
+  content: "";
+  width: 1.2rem;
+  height: 1.2rem;
+  display: block;
+  background: var(--color-white);
+  position: absolute;
+  left: -0.6rem;
+  transform: rotate(45deg);
+}
+
+
