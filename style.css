@@ -516,3 +516,8 @@ main .container .right {
   gap: 1rem;
   margin-bottom: 1rem;
 }
+
+.right .request .action {
+  display: flex;
+  gap: 1rem;
+}
