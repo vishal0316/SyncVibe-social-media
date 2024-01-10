@@ -350,3 +350,12 @@ main .container .left .profile {
   color: var(--color-dark);
   margin-right: 1rem;
 }
+
+.middle .feeds .feed {
+  background: var(--color-white);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  margin: 1rem 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
