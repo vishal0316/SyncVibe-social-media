@@ -521,3 +521,41 @@ main .container .right {
   display: flex;
   gap: 1rem;
 }
+
+/* theme  */
+
+.customize-theme {
+  background: rgba(255, 255, 255, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: center;
+  place-items: center;
+  font-size: 0.9;
+  display: grid;
+}
+
+.customize-theme .card {
+  background: var(--color-white);
+  padding: 3rem;
+  border-radius: var(--card-border-radius);
+  width: 50%;
+}
+
+/* font size */
+
+.customize-theme .font-size {
+  margin-top: 5rem;
+}
+
+.customize-theme .font-size > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-white);
+  padding: var(--search-padding);
+  border-radius: var(--card-border-radius);
+}
