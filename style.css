@@ -555,7 +555,29 @@ main .container .right {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--color-white);
+  background: var(--color-light);
   padding: var(--search-padding);
   border-radius: var(--card-border-radius);
+}
+
+.customize-theme .choose-size {
+  background: var(--color-secondary);
+  height: 0.3rem;
+  width: 100%;
+  margin: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customize-theme .choose-size span {
+  width: 1rem;
+  height: 1rem;
+  background: var(--color-secondary);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.customize-theme .choose-size span.active {
+  background: var(--color-primary);
 }
