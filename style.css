@@ -28,7 +28,7 @@
   --card-padding: 1rem;
 
   --sticky-top-left: 5.4rem;
-  --sticky-top-right: -18rem;
+  --sticky-top-right: -20rem;
 }
 
 *,
@@ -176,8 +176,8 @@ main .container .left .profile {
 .left .sidebar .menu-item {
   display: flex;
   align-items: center;
-  height: 4rem;
   cursor: pointer;
+  height: 4rem;
   transition: all 300ms ease;
   position: relative;
 }
@@ -196,13 +196,13 @@ main .container .left .profile {
 .left .sidebar i .notification-count {
   background: var(--color-danger);
   color: white;
-  font-size: 0.7rem;
-  width: fit-content;
+  font-size: 10px !important;
   border-radius: 0.8rem;
-  padding: 0.1rem 0.4rem;
+  padding: 0.26rem 0.38rem;
   position: absolute;
-  right: -0.3rem;
-  top: -0.3rem;
+  top: -0.4rem;
+  right: -1rem;
+  font-style: italic;
 }
 
 .left .sidebar h3 {
