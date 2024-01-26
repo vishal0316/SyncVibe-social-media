@@ -238,6 +238,11 @@ main .container .left .profile {
   padding: 1rem 0;
 }
 
+.bar
+{
+    display: none;
+}
+
 /* ================--Notification popup--===================================== */
 
 .left .notification-popup {
@@ -788,4 +793,28 @@ footer .footer-btn {
     flex-wrap: wrap;
     margin-block: 1rem;
   }
+}
+
+@media screen and (max-width: 545px)
+{
+    .side-bar-items
+    {
+        display: none;
+        
+    }
+    .bar
+    {
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        height: 4rem;
+        transition: all 300ms ease;
+        position: relative;
+        border-bottom-left-radius: var(--card-border-radius);
+    }
+    .bar a
+    {
+        width: 100%;
+    }
 }

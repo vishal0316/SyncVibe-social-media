@@ -2,6 +2,8 @@
 
 // sidebar
 const menuItems = document.querySelectorAll(".manu-item");
+const sideBarItems = document.querySelectorAll(".side-bar-items");
+const bar = document.querySelector(".bar");
 
 // message
 const messagesNotifications = document.querySelector("#messages-notifications");
@@ -44,6 +46,25 @@ menuItems.forEach((item) => {
       ).style.display = "none";
     }
   });
+});
+
+let toggle = 0;
+bar.addEventListener("click", () => {
+  toggle = !toggle;
+  if (toggle) {
+    sideBarItems.forEach((item) => {
+      item.style.display = "inline-block";
+      item.style.width = "100%";
+      item.style.marginTop = "0px";
+    });
+    sideBarItems[menuItems.length-1].style.borderTopLeftRadius = "0px";
+    bar.style.borderTopLeftRadius = "(--card-border-radius)";
+  }
+  else {
+    sideBarItems.forEach((item) => {
+      item.style.display = "none";
+    });
+  }
 });
 
 // ====================================== MESSAGES ======================================
